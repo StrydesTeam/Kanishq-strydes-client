@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body {
+  background-color: white;
+}
+
+h1 {
+  font-family: 'Bree Serif', serif;
+}
+
+.page-title {
+    display: block !important;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .form-container {
+    width: 400px;
+  }
+
+  .formBorder {
+      margin: auto;
+      height: 50%;
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+      background-color: white;
+  
+  }
+
+  .ui.secondary.pointing.menu {
+    border-bottom: none;
+    width: 65%;
+    margin-top: 0;
+  }
+
+  .menu-background {
+    display: flex;
+    justify-content: center;
+    background-color: #c28277;
+  }
+
+  .ui.menu .teal.active.item, .ui.teal.menu .active.item {
+      border-color: #00b5ad;
+      color: #00b5ad
+  }
+
+  .ui.menu .item {
+    color: white;
+  }
+
+  .wave {
+    transform: translateY(-400px);
+    z-index: 999;
+  }
+
+  .boxes {
+    position: relative;
+    transform: translateY(-70vh);
+    z-index: 1000;
+    height: 300px;
+  }
+
+  .largeImage { 
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 100%), url(./pages/img/happylaptopman.jpg);
+  }
+
+  .postArea {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*Breaks grid into two equal sizes (1 fr)*/
+    grid-gap: 4rem;
+    width: 90%;
+    margin: auto;
+  }
+
+  .profileCard {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .loginForm {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ui.container {
+    width: 2000px;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 100%), url(./pages/img/happylaptopman.jpg);
+    background-size: cover;
+  }
+
+  .jumbotron {
+    height: 80vh;
+    margin-bottom: 0px !important;
+    background-color: transparent !important;
+  }
+
+
+  .bg-cover {
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardWidth {
+  width: 18rem;
+}
+
+.container2 {
+  max-width: 1500px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+  transform: translateY(-35vh);
+}
+
+img {
+  width: 100%;
+  margin: auto;
+}
+
+.cardFr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /*Breaks grid into two equal sizes (1 fr)*/
+  grid-gap: 8rem;
+  background: none;
+  margin-bottom: 15rem;
+  margin-top: 15rem;
+  border: none;
+}
+
+.card-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /*Breaks grid into two equal sizes (1 fr)*/
+  grid-gap: 8rem;
+  background: none;
+  margin-bottom: 15rem;
+  margin-top: 1rem;
+  border: none;
+}
+
+.cardText {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.5rem;
+}
+
+.cardFr h3 {
+  margin-bottom: 2rem;
+  font-family: 'Bree Serif', serif;
+  font-size: 4rem;
+}
+
+.cardFr img {
+  height: 400px;
+}
+
+.cardFr > div { /*Grabs the direct div inside card, and not any other divs*/
+  padding: 2rem;
+}
+
+.cardFr > img {
+  padding: 2rem;
+}
+
+.cardFr:nth-child(even) img{
+  order: 2; /*Switches image to the second instead of the first, which was originally where it was in the grid*/
+}
+
+.card-last {
+  margin-bottom: 0rem;
+}
+
+footer{
+  background-color:  #c28277;
+  color: white;
+}
+.padding{
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+
+.footerElementPadding {
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+}
+
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+hr.light-100{
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+.wordLogo {
+  width: 34% !important;
+}
+
+/*Specific Styling*/
+.biggerText {
+  font-size: 5rem;
+}
+
+@media(max-width: 700px) {
+  .cardFr {
+      display: block;
+  }
+}
+
+@media(max-width: 1860px) {
+  .wave {
+    height: 85%;
+  }
+}
+
+@media(min-width: 700px) {
+  .wave {
+    height: 65%;
+  }
+}
+
